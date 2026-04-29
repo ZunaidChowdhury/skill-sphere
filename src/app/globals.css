@@ -17,9 +17,9 @@ html {
   --background: #f8fafc;
   --foreground: white;
 
-  --theme-primary: #244d3f;
+  --theme-primary: #2b7fff;
 
-  --text-primary: #1f2937;
+  --text-primary: #000000;
   --text-secondary: #64748b;
 }
 
@@ -35,12 +35,13 @@ html {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
+    /* 448px */
   --breakpoint-xs: 28rem;
-  /* 448px */
-  --breakpoint-tablet: 36rem;
   /* 576px */
-  --breakpoint-desktop: 62rem;
+  --breakpoint-tablet: 36rem;
   /* 992px */
+  --breakpoint-desktop: 62rem;
+
 }
 
 
