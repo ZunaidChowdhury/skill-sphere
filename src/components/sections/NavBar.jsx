@@ -21,7 +21,7 @@ const NavBar = () => {
                             <li className={`${pathname === '/' ? 'border-l-4 border-blue-600' : ''}`}><Link href='/' className={`p-2 text-base font-semibold hover:bg-transparent hover:text-blue-600 transition-colors duration-300 ${pathname === '/' ? 'text-blue-600' : ''}`}>Home</Link></li>
                             <li className={`${pathname === '/courses' ? 'border-l-4 border-blue-600' : ''}`}><Link href='/courses' className={`p-2 text-base font-semibold hover:bg-transparent hover:text-blue-600 transition-colors duration-300 ${pathname === '/courses' ? 'text-blue-600' : ''}`}>Courses</Link></li>
                             <li className={`${pathname === '/user/profile' ? 'border-l-4 border-blue-600' : ''}`}><Link href='user/profile' className={`p-2 text-base font-semibold hover:bg-transparent hover:text-blue-600 transition-colors duration-300 ${pathname === '/user/profile' ? 'text-blue-600' : ''}`}>My Profile</Link></li>
-                            <li><Link href='/register' className="tablet:hidden w-full flex items-center gap-2 mr-4 btn text-base font-semibold bg-blue-600 hover:bg-blue-700 text-foreground">
+                            <li><Link href='/register' className="rounded-lg tablet:hidden w-full flex items-center gap-2 mr-4 btn text-base font-semibold bg-blue-600 hover:bg-blue-700 text-foreground">
                                 <UserPlus />Register</Link></li>
 
                         </ul>
@@ -43,9 +43,9 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end ">
-                    <Link href='/log-in' className="flex items-center gap-2 mr-4 btn tablet: hover:text-blue-700 transition-colors duration-300 text-base font-semibold text-text-primary">
+                    <Link href='/log-in' className="rounded-lg flex items-center gap-2 mr-4 btn tablet: hover:text-blue-700 transition-colors duration-300 text-base font-semibold text-text-primary">
                         <LogIn />Log in</Link>
-                    <Link href='/register' className="hidden tablet:flex items-center gap-2 mr-4 btn text-base font-semibold bg-blue-600 hover:bg-blue-700 text-foreground">
+                    <Link href='/register' className="rounded-lg hidden tablet:flex items-center gap-2 mr-4 btn text-base font-semibold bg-blue-600 hover:bg-blue-700 text-foreground">
                         <UserPlus />Register</Link>
                 </div>
             </div>
