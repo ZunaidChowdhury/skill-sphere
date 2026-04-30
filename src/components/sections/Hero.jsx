@@ -46,7 +46,7 @@ const Hero = () => {
                         <div className='flex items-center gap-3'>
                             <Star size={36} className='text-blue-600' />
                             <div>
-                                <h4 className='text-xl font-semibold flex items-center gap-1'>4.8<FaStar /></h4>
+                                <h4 className='text-xl font-semibold flex items-center gap-1'>4.8<FaStar className='mb-1'/></h4>
                                 <p className='text-text-secondary'>Average Rating</p>
                             </div>
                         </div>

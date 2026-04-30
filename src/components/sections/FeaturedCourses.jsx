@@ -12,7 +12,7 @@ const FeaturedCourses = async () => {
     // console.log('courses', courses);
 
     return (
-        <div className='py-10'>
+        <div className='pt-20'>
             {/* container */}
             <div className='max-w-7xl mx-auto'>
                 <SectionHeading
@@ -21,7 +21,7 @@ const FeaturedCourses = async () => {
                     actionBtnTitle='View All Courses'
                     actionBtnUrl='/courses' />
                 {/* content  */}
-                <div className=' grid grid-cols-3 gap-6 pt-4'>
+                <div className=' grid grid-cols-3 gap-8 pt-4'>
                     {/* card */}
                     {
                         courses.slice(0, 3).map(course => <div key={course.id} className=' group rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300'>
