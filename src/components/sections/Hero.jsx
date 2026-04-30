@@ -3,7 +3,8 @@ import { ArrowRight, PackageOpen, Star, User } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { FaStar } from 'react-icons/fa'
+import { FaCode, FaStar } from 'react-icons/fa'
+import { SiCardmarket, SiCodesignal } from 'react-icons/si'
 
 const Hero = () => {
     return (
@@ -18,7 +19,7 @@ const Hero = () => {
                         <span className="inline-block group-hover:-translate-y-2 group-hover:translate-x-2 transition-transform duration-300" role="img" aria-label="rocket"> 🚀</span>
                     </h1>
                     <p className='text-text-secondary text-xl'>Master the skills that matter. From coding to creative design,
-join 10,000+ students building their future today.</p>
+                        join 10,000+ students building their future today.</p>
                     <Link href='/courses' className="rounded-lg btn text-base font-semibold bg-blue-600 hover:bg-blue-700 text-foreground">
                         Explore Courses<ArrowRight /></Link>
 
@@ -32,7 +33,7 @@ join 10,000+ students building their future today.</p>
                             </div>
                         </div>
 
-{/* e2 */}
+                        {/* e2 */}
                         <div className='flex items-center gap-3'>
                             <PackageOpen size={36} className='text-blue-600' />
                             <div>
@@ -53,7 +54,7 @@ join 10,000+ students building their future today.</p>
                 </div>
 
                 {/* col2 */}
-                <div className='justify-self-end '>
+                <div className='relative justify-self-end '>
                     <Image
                         src="/hero-img.png"
                         width={1000}
@@ -61,6 +62,32 @@ join 10,000+ students building their future today.</p>
                         alt="Picture of the author"
 
                     />
+                    <div className='absolute top-36 right-8 flex items-center gap-3 bg-foreground py-2 px-3 rounded-xl'>
+                        <div className='bg-blue-800 p-2 rounded-lg'>
+                            <FaCode geOpen size={24} className='text-white' />
+                        </div>
+                        <div>
+                            <h4 className='text-base font-semibold'>Web Development</h4>
+                        </div>
+                    </div>
+
+                    <div className='absolute top-16 left-16 flex items-center gap-3 bg-foreground py-2 px-3 rounded-xl'>
+                        <div className='bg-purple-800 p-2 rounded-lg'>
+                            <SiCardmarket geOpen size={24} className='text-white' />
+                        </div>
+                        <div>
+                            <h4 className='text-base font-semibold'>Digital Marketing</h4>
+                        </div>
+                    </div>
+
+                    <div className='absolute top-60 left-3 flex items-center gap-3 bg-foreground py-2 px-3 rounded-xl'>
+                        <div className='bg-green-800 p-2 rounded-lg'>
+                            <SiCodesignal  size={24} className='text-white' />
+                        </div>
+                        <div>
+                            <h4 className='text-base font-semibold'>UI/UX Design</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
