@@ -9,8 +9,8 @@ import { SiCardmarket, SiCodesignal } from 'react-icons/si'
 const Hero = () => {
     return (
         <div className='bg-blue-100'>
-            {/* wrapper  */}
-            <div className='max-w-7xl mx-auto grid grid-cols-[1fr_1.2fr] items-center '>
+            {/* container  */}
+            <div className='max-w-7xl mx-auto grid grid-cols-[1fr_1.2fr] items-center py-20'>
                 {/* col1 */}
                 <div className='space-y-6 '>
                     <p className='w-fit text-blue-700 font-semibold bg-blue-200 px-6 py-1 rounded-full'>Learn. Grow. Succeed.</p>
@@ -54,17 +54,17 @@ const Hero = () => {
                 </div>
 
                 {/* col2 */}
-                <div className='relative justify-self-end '>
+                <div className='relative justify-self-end'>
                     <Image
                         src="/hero-img.png"
                         width={1000}
                         height={500}
-                        alt="Picture of the author"
+                        alt="Learning image"
 
                     />
                     <div className='absolute top-36 right-8 flex items-center gap-3 bg-foreground py-2 px-3 rounded-xl'>
                         <div className='bg-blue-800 p-2 rounded-lg'>
-                            <FaCode geOpen size={24} className='text-white' />
+                            <FaCode  size={24} className='text-white' />
                         </div>
                         <div>
                             <h4 className='text-base font-semibold'>Web Development</h4>
@@ -73,7 +73,7 @@ const Hero = () => {
 
                     <div className='absolute top-16 left-16 flex items-center gap-3 bg-foreground py-2 px-3 rounded-xl'>
                         <div className='bg-purple-800 p-2 rounded-lg'>
-                            <SiCardmarket geOpen size={24} className='text-white' />
+                            <SiCardmarket  size={24} className='text-white' />
                         </div>
                         <div>
                             <h4 className='text-base font-semibold'>Digital Marketing</h4>

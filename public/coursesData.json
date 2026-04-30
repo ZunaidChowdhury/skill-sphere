@@ -4,9 +4,11 @@
     "title": "Complete Web Development Bootcamp",
     "instructor": "John Doe",
     "duration": "20 hours",
-    "rating": 4.8,
+    "rating": 4.9,
     "level": "Beginner",
     "description": "Learn full-stack web development from scratch.",
+    "instructorImage": "/instructors/i1.png",
+    "ratedUsers": 1240,
     "image": "/c1.jpeg",
     "category": "Development"
   },
@@ -19,6 +21,8 @@
     "level": "Intermediate",
     "description": "Master wireframing, prototyping, and user psychology.",
     "image": "/c2.jpeg",
+    "instructorImage": "/instructors/i2.png",
+    "ratedUsers": 923,
     "category": "Design"
   },
   {
@@ -30,6 +34,8 @@
     "level": "Beginner",
     "description": "A comprehensive guide to SEO, SEM, and social media ads.",
     "image": "/c3.jpeg",
+    "instructorImage": "/instructors/i3.png",
+    "ratedUsers": 700,
     "category": "Marketing"
   },
   {
@@ -41,6 +47,8 @@
     "level": "Advanced",
     "description": "Build high-performance web apps with Server Components.",
     "image": "/c4.jpeg",
+    "instructorImage": "/instructors/i4.png",
+    "ratedUsers": 627,
     "category": "Development"
   },
   {
@@ -52,6 +60,8 @@
     "level": "Beginner",
     "description": "Learn Photoshop and Illustrator basics to start your career.",
     "image": "/c5.jpeg",
+    "instructorImage": "/instructors/i5.png",
+    "ratedUsers": 472,
     "category": "Design"
   },
   {
@@ -63,6 +73,8 @@
     "level": "Intermediate",
     "description": "Analyze large datasets and build predictive models.",
     "image": "/c6.jpeg",
+    "instructorImage": "/instructors/i6.png",
+    "ratedUsers": 612,
     "category": "Data Science"
   },
   {
@@ -74,6 +86,8 @@
     "level": "Beginner",
     "description": "Write compelling copy that converts and ranks on Google.",
     "image": "/c7.jpeg",
+    "instructorImage": "/instructors/i7.png",
+    "ratedUsers": 580,
     "category": "Marketing"
   },
   {
@@ -85,6 +99,8 @@
     "level": "Intermediate",
     "description": "Protect systems from threats and understand ethical hacking.",
     "image": "/c8.jpeg",
+    "instructorImage": "/instructors/i8.png",
+    "ratedUsers": 712,
     "category": "Development"
   }
 ]
