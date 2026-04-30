@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Web Development Bootcamp",
+    "instructor": "John Doe",
+    "duration": "20 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "description": "Learn full-stack web development from scratch.",
+    "image": "/c1.jpeg",
+    "category": "Development"
+  },
+  {
+    "id": 2,
+    "title": "Advanced UI/UX Design Principles",
+    "instructor": "Sarah Jenkins",
+    "duration": "15 hours",
+    "rating": 4.9,
+    "level": "Intermediate",
+    "description": "Master wireframing, prototyping, and user psychology.",
+    "image": "/c2.jpeg",
+    "category": "Design"
+  },
+  {
+    "id": 3,
+    "title": "Digital Marketing Strategy 2024",
+    "instructor": "Mike Ross",
+    "duration": "12 hours",
+    "rating": 4.7,
+    "level": "Beginner",
+    "description": "A comprehensive guide to SEO, SEM, and social media ads.",
+    "image": "/c3.jpeg",
+    "category": "Marketing"
+  },
+  {
+    "id": 4,
+    "title": "Mastering React and Next.js",
+    "instructor": "Alex Rivera",
+    "duration": "25 hours",
+    "rating": 4.9,
+    "level": "Advanced",
+    "description": "Build high-performance web apps with Server Components.",
+    "image": "/c4.jpeg",
+    "category": "Development"
+  },
+  {
+    "id": 5,
+    "title": "Graphic Design for Beginners",
+    "instructor": "Emily Chen",
+    "duration": "10 hours",
+    "rating": 4.6,
+    "level": "Beginner",
+    "description": "Learn Photoshop and Illustrator basics to start your career.",
+    "image": "/c5.jpeg",
+    "category": "Design"
+  },
+  {
+    "id": 6,
+    "title": "Data Science with Python",
+    "instructor": "Dr. David Smith",
+    "duration": "30 hours",
+    "rating": 4.8,
+    "level": "Intermediate",
+    "description": "Analyze large datasets and build predictive models.",
+    "image": "/c6.jpeg",
+    "category": "Data Science"
+  },
+  {
+    "id": 7,
+    "title": "Content Writing Masterclass",
+    "instructor": "Laura Bennett",
+    "duration": "8 hours",
+    "rating": 4.5,
+    "level": "Beginner",
+    "description": "Write compelling copy that converts and ranks on Google.",
+    "image": "/c7.jpeg",
+    "category": "Marketing"
+  },
+  {
+    "id": 8,
+    "title": "Cybersecurity Essentials",
+    "instructor": "Kevin Mitnick",
+    "duration": "18 hours",
+    "rating": 4.9,
+    "level": "Intermediate",
+    "description": "Protect systems from threats and understand ethical hacking.",
+    "image": "/c8.jpeg",
+    "category": "Development"
+  }
+]
