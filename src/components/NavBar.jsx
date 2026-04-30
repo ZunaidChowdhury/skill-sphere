@@ -26,14 +26,14 @@ const NavBar = () => {
 
                         </ul>
                     </div>
-                    <a href='/' className="flex items-center gap-2">
+                    <Link href='/' className="flex items-center gap-2">
                         <GraduationCap
-                            className='text-primary'
+                            className='text-primary mb-1'
                             // color="blue"
                             size={36}
                             strokeWidth={2}
                         />
-                        <span className='text-xl font-semibold'>SkillSphere</span></a>
+                        <span className='text-xl font-semibold'>SkillSphere</span></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 text-base font-semibold ">
