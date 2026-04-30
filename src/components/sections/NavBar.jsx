@@ -9,7 +9,7 @@ const NavBar = () => {
     const pathname = usePathname()
     return (
         <div className='border-b border-zinc-200'>
-            <div className="navbar bg-foreground max-w-7xl mx-auto">
+            <div className="navbar bg-foreground max-w-350 mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

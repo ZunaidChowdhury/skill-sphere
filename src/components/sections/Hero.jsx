@@ -10,7 +10,7 @@ const Hero = () => {
     return (
         <div className='bg-blue-100'>
             {/* container  */}
-            <div className='max-w-7xl mx-auto grid grid-cols-[1fr_1.2fr] items-center py-20'>
+            <div className='max-w-350 mx-auto grid grid-cols-[1fr_1.2fr] items-center py-20'>
                 {/* col1 */}
                 <div className='space-y-6 '>
                     <p className='w-fit text-blue-700 font-semibold bg-blue-200 px-6 py-1 rounded-full'>Learn. Grow. Succeed.</p>

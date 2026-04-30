@@ -9,7 +9,7 @@ const LearningTips = () => {
     return (
         <div className='pt-20'>
             {/* container */}
-            <div className='max-w-7xl mx-auto'>
+            <div className='max-w-350 mx-auto'>
 
                 <SectionHeading
                     title='Smart Ways to Learn'
@@ -42,7 +42,7 @@ const LearningTips = () => {
                         </div>
                         <div>
                             <h4 className='text-2xl font-bold'>
- Time Management Tips
+                                Time Management Tips
                             </h4>
                             <p className='text-text-secondary mb-4'>
                                 Plan your day, set priorities, and avoid distractions to

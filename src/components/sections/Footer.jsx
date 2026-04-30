@@ -8,7 +8,7 @@ const Footer = () => {
 
         <footer className="text-foreground">
             <div className="bg-[#101828] py-20">
-                <div className="w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-[2fr_2fr]  md:grid-cols-[2.5fr_2fr_1fr] lg:grid-cols-[2.5fr_2fr_1fr_1fr_1fr] gap-4">
+                <div className="w-full max-w-350 mx-auto grid grid-cols-1 sm:grid-cols-[2fr_2fr]  md:grid-cols-[2.5fr_2fr_1fr] lg:grid-cols-[2.5fr_2fr_1fr_1fr_1fr] gap-4">
                     {/* col 1 */}
                     <div className="">
                         <Link href='/' className="flex items-center gap-2">

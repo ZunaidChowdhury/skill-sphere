@@ -14,7 +14,7 @@ const FeaturedCourses = async () => {
     return (
         <div className='pt-20'>
             {/* container */}
-            <div className='max-w-7xl mx-auto'>
+            <div className='max-w-350 mx-auto'>
                 <SectionHeading
                     title='Top Rated Courses'
                     subTitle='Popular Courses'

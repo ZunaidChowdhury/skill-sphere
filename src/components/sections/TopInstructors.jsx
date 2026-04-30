@@ -43,7 +43,7 @@ const TopInstructors = () => {
     return (
         <div className='pt-20'>
             {/* container */}
-            <div className='max-w-7xl mx-auto'>
+            <div className='max-w-350 mx-auto'>
 
                 <SectionHeading
                     title='Learn from the Best'
@@ -53,7 +53,7 @@ const TopInstructors = () => {
 
                 <div className='mt-4 grid grid-cols-4 gap-6'>
                     {
-                        instructorsData.map(instructor => <div key={instructor.id} className='bg-foreground rounded-lg border border-zinc-200 shadow-lg p-6 flex flex-col justify-center items-center gap-3'>
+                        instructorsData.map(instructor => <div key={instructor.id} className='bg-foreground rounded-lg border border-zinc-200 shadow-md hover:shadow-lg transform-all duration-300 p-6 flex flex-col justify-center items-center gap-3'>
                             <div className='shrink-0  w-20 h-20 rounded-full flex flex-col justify-center items-center'>
                                 <Image
                                     src={instructor.instructorImage}
