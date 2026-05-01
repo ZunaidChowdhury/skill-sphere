@@ -1,14 +1,33 @@
 "use client";
 
-import { handleRegister } from '@/lib/actions/actions';
+import { authClient } from '@/lib/auth-client';
 import Link from 'next/link';
 import React, { useState } from 'react'
 import { FaEye, FaEyeSlash, FaGithub } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
-
+import { useRouter } from "next/navigation";
 
 const RegisterPage = () => {
+  const router = useRouter();
   const [isHiddenPass, setIsHiddenPass] = useState(true);
+
+  const handleRegister = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const { name, email, photoUrl, password } = Object.fromEntries(formData);
+
+    const { data, error } = await authClient.signUp.email({
+      name,
+      email,
+      password,
+      image: photoUrl,
+    });
+
+    if (data) {
+      router.push('/');
+    }
+  }
+
   return (
     <div className=" flex items-center justify-center bg-base-200 py-20">
       <div className="card w-full max-w-md bg-foreground shadow-lg p-8">
@@ -33,7 +52,7 @@ const RegisterPage = () => {
         <div className="divider text-xs text-base-content/40 uppercase">or</div>
 
         {/* Registration Form using Server Action */}
-        <form action={handleRegister} className="space-y-4">
+        <form onSubmit={handleRegister} className="space-y-4">
           <div className="form-control">
             <label className="label">
               <span className="label-text font-semibold">Name</span>
@@ -82,7 +101,7 @@ const RegisterPage = () => {
                 required
               />
               <button type="button" onClick={() => setIsHiddenPass(!isHiddenPass)} className="cursor-pointer absolute right-3 top-3 opacity-50">
-                { isHiddenPass ? <FaEye size={18} /> : <FaEyeSlash size={18} />}
+                {isHiddenPass ? <FaEye size={18} /> : <FaEyeSlash size={18} />}
               </button>
             </div>
           </div>

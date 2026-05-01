@@ -39,7 +39,7 @@ const instructorsData = [
 ];
 
 const TopInstructors = () => {
-    console.log(instructorsData);
+    // console.log(instructorsData);
     return (
         <div className='pt-20'>
             {/* container */}
