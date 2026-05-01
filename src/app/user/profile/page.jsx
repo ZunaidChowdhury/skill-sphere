@@ -1,9 +1,9 @@
 import React from 'react'
 
-const UserPage = async() => {
+const UserProfilePage = async() => {
   return (
-    <div>UserPage</div>
+    <div>UserProfilePage</div>
   )
 }
 
-export default UserPage
+export default UserProfilePage
