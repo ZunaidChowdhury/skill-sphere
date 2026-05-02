@@ -11,6 +11,7 @@ import { useRouter } from "next/navigation";
 const RegisterPage = () => {
   const router = useRouter();
   const [isHiddenPass, setIsHiddenPass] = useState(true);
+  const [error, setError] = useState(null);
 
   const handleRegister = async (e) => {
     e.preventDefault();
@@ -25,7 +26,13 @@ const RegisterPage = () => {
     });
 
     if (data) {
-      router.push('/');
+      setError(null);
+      await authClient.signOut();
+      router.push('/log-in');
+    }
+
+    if (error) {
+      setError(error);
     }
   }
 
@@ -43,11 +50,15 @@ const RegisterPage = () => {
 
             Continue with Google
           </button>
-          <button onClick={() => gitHubSignIn ()} className="btn btn-outline border-zinc-200 hover:bg-zinc-100 w-full normal-case">
-            {/* <img src="/github-icon.svg" alt="GitHub" className="w-5 h-5 mr-2" /> */}
-            <FaGithub size={24} />
-            Continue with GitHub
-          </button>
+
+{
+          //   <button onClick={() => gitHubSignIn()} className="btn btn-outline border-zinc-200 hover:bg-zinc-100 w-full normal-case">
+          //   {/* <img src="/github-icon.svg" alt="GitHub" className="w-5 h-5 mr-2" /> */}
+          //   <FaGithub size={24} />
+          //   Continue with GitHub
+          // </button>
+}
+          
         </div>
 
         <div className="divider text-xs text-base-content/40 uppercase">or</div>
@@ -110,6 +121,11 @@ const RegisterPage = () => {
           <button type="submit" className="btn bg-blue-600 text-white hover:bg-blue-700 w-full mt-2">
             Continue
           </button>
+          {
+            error && <p className='text-red-500 font-medium text-center'>
+              {error?.message}
+            </p>
+          }
         </form>
 
         <p className="text-center text-sm mt-6 text-base-content/70">
