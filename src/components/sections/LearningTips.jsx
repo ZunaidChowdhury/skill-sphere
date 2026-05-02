@@ -38,7 +38,7 @@ const LearningTips = () => {
                     {/* card2 */}
                     <div className='bg-green-100 rounded-lg border border-green-200 p-6 flex gap-6'>
                         <div className='shrink-0 bg-green-500 p-2 w-24 h-24 rounded-full flex justify-center items-center'>
-                            <SlBookOpen size={50} className=' text-white' />
+                            <LuAlarmClockCheck  size={50} className=' text-white' />
                         </div>
                         <div>
                             <h4 className='text-2xl font-bold'>

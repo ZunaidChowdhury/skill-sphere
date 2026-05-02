@@ -1,0 +1,811 @@
+[
+  {
+    "id": 1,
+    "curriculum": [
+      {
+        "title": "1. Introduction",
+        "totalTime": "15 min",
+        "lectures": [
+          { "title": "Welcome to the Course", "duration": "05:30" },
+          { "title": "Course Overview", "duration": "09:30" }
+        ]
+      },
+      {
+        "title": "2. HTML Fundamentals",
+        "totalTime": "1h 30m",
+        "lectures": [
+          { "title": "How the Web Works", "duration": "12:15" },
+          { "title": "HTML Document Structure", "duration": "10:45" },
+          { "title": "Essential Tags & Elements", "duration": "18:30" },
+          { "title": "Working with Lists and Tables", "duration": "15:00" },
+          { "title": "HTML Forms and Input", "duration": "22:10" },
+          { "title": "Semantic HTML5", "duration": "11:20" }
+        ]
+      },
+      {
+        "title": "3. CSS Fundamentals",
+        "totalTime": "1h 45m",
+        "lectures": [
+          { "title": "Introduction to CSS", "duration": "08:45" },
+          { "title": "Selectors and Specificity", "duration": "15:30" },
+          { "title": "The Box Model", "duration": "20:15" },
+          { "title": "Positioning and Layout", "duration": "22:45" },
+          { "title": "Flexbox Deep Dive", "duration": "25:00" },
+          { "title": "CSS Grid Essentials", "duration": "12:45" }
+        ]
+      },
+      {
+        "title": "4. JavaScript Basics",
+        "totalTime": "3h",
+        "lectures": [
+          { "title": "JS Variables and Data Types", "duration": "18:00" },
+          { "title": "Functions and Scope", "duration": "25:30" },
+          { "title": "Arrays and Objects", "duration": "22:15" },
+          { "title": "Control Flow & Loops", "duration": "20:00" },
+          { "title": "DOM Manipulation", "duration": "30:45" },
+          { "title": "Event Listeners", "duration": "18:15" },
+          { "title": "Asynchronous JS", "duration": "25:15" },
+          { "title": "Project: Simple Calculator", "duration": "19:00" }
+        ]
+      },
+      {
+        "title": "5. Backend with Node.js",
+        "totalTime": "4h",
+        "lectures": [
+          { "title": "Node.js Architecture", "duration": "15:00" },
+          { "title": "NPM and Modules", "duration": "12:30" },
+          { "title": "Express Framework Setup", "duration": "20:45" },
+          { "title": "Routing and Middleware", "duration": "35:00" },
+          { "title": "REST API Design", "duration": "45:15" },
+          { "title": "Authentication with JWT", "duration": "55:30" },
+          { "title": "Error Handling", "duration": "25:00" },
+          { "title": "Environment Variables", "duration": "11:00" }
+        ]
+      },
+      {
+        "title": "6. Working with Databases",
+        "totalTime": "2h",
+        "lectures": [
+          { "title": "SQL vs NoSQL", "duration": "15:00" },
+          { "title": "MongoDB Atlas Setup", "duration": "12:45" },
+          { "title": "Mongoose Models", "duration": "22:30" },
+          { "title": "CRUD Operations", "duration": "45:45" },
+          { "title": "Database Relationships", "duration": "24:00" }
+        ]
+      },
+      {
+        "title": "7. Building Real-world Projects",
+        "totalTime": "4h",
+        "lectures": [
+          { "title": "Project Planning & UX", "duration": "30:00" },
+          { "title": "Frontend Implementation", "duration": "1:15:00" },
+          { "title": "Backend Integration", "duration": "1:30:00" },
+          { "title": "Testing and Debugging", "duration": "30:00" },
+          { "title": "Optimizing Performance", "duration": "15:00" }
+        ]
+      },
+      {
+        "title": "8. Deployment & Final Project",
+        "totalTime": "1h",
+        "lectures": [
+          { "title": "Preparing for Production", "duration": "25:00" },
+          { "title": "Deploying to Vercel", "duration": "35:00" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "curriculum": [
+      {
+        "title": "1. UX Psychology Foundations",
+        "totalTime": "1h 45m",
+        "lectures": [
+          { "title": "Understanding Human Behavior", "duration": "25:00" },
+          {
+            "title": "Cognitive Load and Decision Making",
+            "duration": "30:15"
+          },
+          { "title": "Hick's Law and Fitts's Law", "duration": "20:45" },
+          { "title": "Designing for Emotional Impact", "duration": "29:00" }
+        ]
+      },
+      {
+        "title": "2. User Research and Personas",
+        "totalTime": "2h 15m",
+        "lectures": [
+          { "title": "Conducting User Interviews", "duration": "45:00" },
+          { "title": "Creating Actionable Personas", "duration": "35:30" },
+          { "title": "Customer Journey Mapping", "duration": "54:30" }
+        ]
+      },
+      {
+        "title": "3. Advanced Wireframing",
+        "totalTime": "2h",
+        "lectures": [
+          { "title": "Low-Fidelity Sketching", "duration": "20:00" },
+          { "title": "Information Architecture", "duration": "40:00" },
+          { "title": "User Flow Optimization", "duration": "1:00:00" }
+        ]
+      },
+      {
+        "title": "4. High-Fidelity Design in Figma",
+        "totalTime": "3h 30m",
+        "lectures": [
+          { "title": "Auto Layout Masterclass", "duration": "45:00" },
+          { "title": "Advanced Component Properties", "duration": "55:00" },
+          { "title": "Creating Responsive Grids", "duration": "50:00" },
+          { "title": "Variable and Style Management", "duration": "1:00:00" }
+        ]
+      },
+      {
+        "title": "5. Interactive Prototyping",
+        "totalTime": "2h 45m",
+        "lectures": [
+          { "title": "Smart Animate Deep Dive", "duration": "45:00" },
+          { "title": "Micro-interactions and Feedback", "duration": "30:00" },
+          {
+            "title": "Conditional Logic in Prototypes",
+            "duration": "1:30:00"
+          }
+        ]
+      },
+      {
+        "title": "6. Design Systems at Scale",
+        "totalTime": "1h 15m",
+        "lectures": [
+          { "title": "Tokenization in Design", "duration": "25:00" },
+          { "title": "Documentation for Developers", "duration": "30:00" },
+          { "title": "Scaling Components across Teams", "duration": "20:00" }
+        ]
+      },
+      {
+        "title": "7. Accessibility and Inclusivity",
+        "totalTime": "1h 30m",
+        "lectures": [
+          { "title": "WCAG Guidelines Explained", "duration": "30:00" },
+          { "title": "Testing for Screen Readers", "duration": "25:00" },
+          { "title": "Contrast and Color Blindness", "duration": "35:00" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "curriculum": [
+      {
+        "title": "1. Introduction to Growth Hacking",
+        "totalTime": "1h",
+        "lectures": [
+          { "title": "What is Growth Hacking?", "duration": "15:00" },
+          {
+            "title": "The Pirate Metrics (AARRR) Framework",
+            "duration": "25:00"
+          },
+          {
+            "title": "Case Studies: How Airbnb & Dropbox Scaled",
+            "duration": "20:00"
+          }
+        ]
+      },
+      {
+        "title": "2. SEO & Content Strategy",
+        "totalTime": "2h 30m",
+        "lectures": [
+          { "title": "Keyword Research for 2024", "duration": "45:00" },
+          { "title": "On-Page SEO Optimization", "duration": "45:00" },
+          { "title": "Building a Backlink Strategy", "duration": "30:00" },
+          { "title": "Content Pillars and Clustering", "duration": "30:00" }
+        ]
+      },
+      {
+        "title": "3. Social Media & Paid Ads",
+        "totalTime": "3h",
+        "lectures": [
+          {
+            "title": "Facebook Ad Manager Masterclass",
+            "duration": "1:00:00"
+          },
+          { "title": "Instagram Growth Strategies", "duration": "45:00" },
+          {
+            "title": "Retargeting and Lookalike Audiences",
+            "duration": "45:00"
+          },
+          {
+            "title": "Copywriting for High-Conversion Ads",
+            "duration": "30:00"
+          }
+        ]
+      },
+      {
+        "title": "4. Search Engine Marketing (Google Ads)",
+        "totalTime": "1h 45m",
+        "lectures": [
+          {
+            "title": "Setting Up Your First Search Campaign",
+            "duration": "40:00"
+          },
+          {
+            "title": "Bidding Strategies and Quality Score",
+            "duration": "35:00"
+          },
+          { "title": "Display and Video Ad Basics", "duration": "30:00" }
+        ]
+      },
+      {
+        "title": "5. Email Marketing & Automation",
+        "totalTime": "1h 15m",
+        "lectures": [
+          { "title": "Lead Magnet Creation", "duration": "20:00" },
+          {
+            "title": "Designing High-Open Rate Newsletters",
+            "duration": "25:00"
+          },
+          {
+            "title": "Setting Up Automated Drip Campaigns",
+            "duration": "30:00"
+          }
+        ]
+      },
+      {
+        "title": "6. Analytics & Optimization",
+        "totalTime": "1h 30m",
+        "lectures": [
+          {
+            "title": "Introduction to Google Analytics 4",
+            "duration": "40:00"
+          },
+          { "title": "A/B Testing Your Landing Pages", "duration": "30:00" },
+          {
+            "title": "Conversion Rate Optimization (CRO)",
+            "duration": "20:00"
+          }
+        ]
+      },
+      {
+        "title": "7. Final Project: Growth Blueprint",
+        "totalTime": "1h",
+        "lectures": [
+          {
+            "title": "Building Your 6-Month Marketing Plan",
+            "duration": "40:00"
+          },
+          { "title": "Tools of the Trade Recap", "duration": "20:00" }
+        ]
+      }
+    ]
+  },
+
+  {
+    "id": 4,
+    "curriculum": [
+      {
+        "title": "1. The Evolution: From React to Next.js",
+        "totalTime": "2h",
+        "lectures": [
+          {
+            "title": "Client-side vs Server-side Rendering",
+            "duration": "45:00"
+          },
+          { "title": "Next.js Project Architecture", "duration": "35:00" },
+          {
+            "title": "Understanding Hydration and Interaction",
+            "duration": "40:00"
+          }
+        ]
+      },
+      {
+        "title": "2. Mastering the App Router",
+        "totalTime": "4h 30m",
+        "lectures": [
+          { "title": "File-based Routing Deep Dive", "duration": "50:00" },
+          { "title": "Nested Layouts and Templates", "duration": "1:10:00" },
+          {
+            "title": "Dynamic Routes and Catch-all Segments",
+            "duration": "1:00:00"
+          },
+          {
+            "title": "Parallel and Intercepting Routes",
+            "duration": "1:30:00"
+          }
+        ]
+      },
+      {
+        "title": "3. Server Components & Data Fetching",
+        "totalTime": "5h",
+        "lectures": [
+          {
+            "title": "Server vs Client Components: When to use what",
+            "duration": "1:00:00"
+          },
+          {
+            "title": "Data Fetching with Fetch API & Promises",
+            "duration": "1:15:00"
+          },
+          {
+            "title": "Caching and Revalidation Strategies",
+            "duration": "1:15:00"
+          },
+          {
+            "title": "Streaming with loading.js and Suspense",
+            "duration": "1:30:00"
+          }
+        ]
+      },
+      {
+        "title": "4. Server Actions and Mutations",
+        "totalTime": "3h 45m",
+        "lectures": [
+          {
+            "title": "Handling Form Submissions with Server Actions",
+            "duration": "1:00:00"
+          },
+          {
+            "title": "Optimistic Updates for better UX",
+            "duration": "45:00"
+          },
+          {
+            "title": "Validation with Zod and React Hook Form",
+            "duration": "1:00:00"
+          },
+          { "title": "Error Handling in Mutations", "duration": "1:00:00" }
+        ]
+      },
+      {
+        "title": "5. Advanced State Management",
+        "totalTime": "3h",
+        "lectures": [
+          { "title": "Context API for Global State", "duration": "45:00" },
+          {
+            "title": "Zustand: The Modern Redux Alternative",
+            "duration": "1:15:00"
+          },
+          {
+            "title": "Managing Server State with TanStack Query",
+            "duration": "1:00:00"
+          }
+        ]
+      },
+      {
+        "title": "6. Performance and SEO",
+        "totalTime": "4h",
+        "lectures": [
+          {
+            "title": "Next/Image and Asset Optimization",
+            "duration": "1:00:00"
+          },
+          { "title": "Core Web Vitals and Metrics", "duration": "1:00:00" },
+          { "title": "Metadata API and Dynamic SEO", "duration": "1:00:00" },
+          {
+            "title": "Bundle Analysis and Code Splitting",
+            "duration": "1:00:00"
+          }
+        ]
+      },
+      {
+        "title": "7. Deployment and CI/CD",
+        "totalTime": "3h 15m",
+        "lectures": [
+          {
+            "title": "Deploying to Vercel and Custom VPS",
+            "duration": "1:15:00"
+          },
+          { "title": "Environment Variable Management", "duration": "45:00" },
+          {
+            "title": "Setting up Automated Testing with Playwright",
+            "duration": "1:15:00"
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "id": 5,
+    "curriculum": [
+      {
+        "title": "1. Graphic Design Fundamentals",
+        "totalTime": "1h 15m",
+        "lectures": [
+          {
+            "title": "Elements of Design: Line, Shape, and Form",
+            "duration": "20:00"
+          },
+          { "title": "Understanding Visual Hierarchy", "duration": "25:00" },
+          { "title": "Color Theory for Beginners", "duration": "30:00" }
+        ]
+      },
+      {
+        "title": "2. Getting Started with Adobe Illustrator",
+        "totalTime": "2h 30m",
+        "lectures": [
+          { "title": "The Illustrator Interface", "duration": "30:00" },
+          {
+            "title": "Mastering the Pen and Shape Tools",
+            "duration": "45:00"
+          },
+          { "title": "Working with Paths and Layers", "duration": "35:00" },
+          { "title": "The Pathfinder Tool Explained", "duration": "40:00" }
+        ]
+      },
+      {
+        "title": "3. Logo Design Project",
+        "totalTime": "1h 45m",
+        "lectures": [
+          { "title": "Sketching Your Ideas", "duration": "15:00" },
+          { "title": "Vectorizing a Hand-Drawn Logo", "duration": "50:00" },
+          { "title": "Typography and Font Pairings", "duration": "40:00" }
+        ]
+      },
+      {
+        "title": "4. Adobe Photoshop Essentials",
+        "totalTime": "2h",
+        "lectures": [
+          { "title": "Photoshop Workspace and Layers", "duration": "30:00" },
+          { "title": "Selection Tools and Masking", "duration": "45:00" },
+          { "title": "Color Correction and Grading", "duration": "45:00" }
+        ]
+      },
+      {
+        "title": "5. Photo Retouching and Compositing",
+        "totalTime": "1h 30m",
+        "lectures": [
+          {
+            "title": "Using the Healing Brush and Clone Stamp",
+            "duration": "35:00"
+          },
+          {
+            "title": "Creating a Double Exposure Effect",
+            "duration": "30:00"
+          },
+          { "title": "Non-Destructive Editing Workflow", "duration": "25:00" }
+        ]
+      },
+      {
+        "title": "6. Design for Social Media",
+        "totalTime": "1h",
+        "lectures": [
+          {
+            "title": "Instagram Post and Story Dimensions",
+            "duration": "20:00"
+          },
+          { "title": "Creating Reusable Templates", "duration": "25:00" },
+          { "title": "Exporting for Web vs. Print", "duration": "15:00" }
+        ]
+      }
+    ]
+  },
+
+  {
+    "id": 6,
+      "curriculum": [
+        {
+          "title": "1. Data Science Environment Setup",
+          "totalTime": "2h",
+          "lectures": [
+            {
+              "title": "Installing Anaconda and Jupyter Notebooks",
+              "duration": "35:00"
+            },
+            {
+              "title": "Python Refresher for Data Science",
+              "duration": "55:00"
+            },
+            {
+              "title": "Understanding the Data Science Lifecycle",
+              "duration": "30:00"
+            }
+          ]
+        },
+        {
+          "title": "2. Scientific Computing with NumPy",
+          "totalTime": "3h 30m",
+          "lectures": [
+            {
+              "title": "NumPy Arrays and Vectorization",
+              "duration": "1:00:00"
+            },
+            { "title": "Array Indexing and Slicing", "duration": "45:00" },
+            {
+              "title": "Broadcasting and Universal Functions",
+              "duration": "50:00"
+            },
+            { "title": "Linear Algebra Operations", "duration": "55:00" }
+          ]
+        },
+        {
+          "title": "3. Data Manipulation with Pandas",
+          "totalTime": "6h",
+          "lectures": [
+            {
+              "title": "Series and DataFrames Essentials",
+              "duration": "1:15:00"
+            },
+            {
+              "title": "Data Cleaning: Missing Values and Duplicates",
+              "duration": "1:30:00"
+            },
+            { "title": "Groupby and Pivot Tables", "duration": "1:15:00" },
+            {
+              "title": "Merging, Joining, and Concatenating",
+              "duration": "1:00:00"
+            },
+            { "title": "Time Series Data Analysis", "duration": "1:00:00" }
+          ]
+        },
+        {
+          "title": "4. Data Visualization Techniques",
+          "totalTime": "4h 15m",
+          "lectures": [
+            {
+              "title": "Statistical Plotting with Seaborn",
+              "duration": "1:15:00"
+            },
+            {
+              "title": "Customizing Charts with Matplotlib",
+              "duration": "1:00:00"
+            },
+            {
+              "title": "Interactive Dashboards with Plotly",
+              "duration": "1:00:00"
+            },
+            {
+              "title": "Exploratory Data Analysis (EDA) Project",
+              "duration": "1:00:00"
+            }
+          ]
+        },
+        {
+          "title": "5. Machine Learning: Supervised Learning",
+          "totalTime": "8h",
+          "lectures": [
+            {
+              "title": "Linear and Logistic Regression",
+              "duration": "2:00:00"
+            },
+            {
+              "title": "Decision Trees and Random Forests",
+              "duration": "2:00:00"
+            },
+            { "title": "Support Vector Machines (SVM)", "duration": "1:30:00" },
+            { "title": "K-Nearest Neighbors (KNN)", "duration": "1:00:00" },
+            {
+              "title": "Model Evaluation: Cross-Validation & Metrics",
+              "duration": "1:30:00"
+            }
+          ]
+        },
+        {
+          "title": "6. Machine Learning: Unsupervised Learning",
+          "totalTime": "4h 15m",
+          "lectures": [
+            { "title": "K-Means Clustering Algorithm", "duration": "1:15:00" },
+            {
+              "title": "Principal Component Analysis (PCA)",
+              "duration": "1:30:00"
+            },
+            { "title": "Hierarchical Clustering", "duration": "1:30:00" }
+          ]
+        },
+        {
+          "title": "7. Deployment and Capstone",
+          "totalTime": "2h",
+          "lectures": [
+            {
+              "title": "Saving Models with Joblib/Pickle",
+              "duration": "45:00"
+            },
+            {
+              "title": "Building a Basic API with Flask",
+              "duration": "1:15:00"
+            }
+          ]
+        }
+      ]
+  },
+
+  {
+    "id": 7,
+    "curriculum": [
+        {
+          "title": "1. Writing for the Web vs. Print",
+          "totalTime": "1h",
+          "lectures": [
+            {
+              "title": "Understanding Digital Reading Habits",
+              "duration": "20:00"
+            },
+            { "title": "The F-Pattern and Scannability", "duration": "20:00" },
+            { "title": "Tone, Voice, and Brand Persona", "duration": "20:00" }
+          ]
+        },
+        {
+          "title": "2. SEO Writing Essentials",
+          "totalTime": "1h 45m",
+          "lectures": [
+            { "title": "Keywords and Search Intent", "duration": "35:00" },
+            {
+              "title": "Structuring Blog Posts for Featured Snippets",
+              "duration": "40:00"
+            },
+            { "title": "Meta Descriptions and Title Tags", "duration": "30:00" }
+          ]
+        },
+        {
+          "title": "3. The Art of Persuasive Copywriting",
+          "totalTime": "1h 30m",
+          "lectures": [
+            { "title": "Mastering the AIDA Formula", "duration": "30:00" },
+            {
+              "title": "Psychological Triggers in Writing",
+              "duration": "30:00"
+            },
+            {
+              "title": "Writing Powerful Calls to Action (CTAs)",
+              "duration": "30:00"
+            }
+          ]
+        },
+        {
+          "title": "4. Content Research and Outlining",
+          "totalTime": "1h 15m",
+          "lectures": [
+            {
+              "title": "Finding Reliable Sources and Data",
+              "duration": "25:00"
+            },
+            { "title": "Creating Bulletproof Outlines", "duration": "25:00" },
+            {
+              "title": "Interviewing Subject Matter Experts",
+              "duration": "25:00"
+            }
+          ]
+        },
+        {
+          "title": "5. Editing and Polishing Your Work",
+          "totalTime": "1h 30m",
+          "lectures": [
+            { "title": "Self-Editing Techniques", "duration": "30:00" },
+            {
+              "title": "Using Tools like Grammarly and Hemingway",
+              "duration": "30:00"
+            },
+            { "title": "The Importance of Peer Review", "duration": "30:00" }
+          ]
+        },
+        {
+          "title": "6. Freelance Business Basics",
+          "totalTime": "1h",
+          "lectures": [
+            {
+              "title": "Setting Your Rates and Finding Clients",
+              "duration": "30:00"
+            },
+            {
+              "title": "Pitching to High-Paying Publications",
+              "duration": "30:00"
+            }
+          ]
+        }
+      ]
+  },
+
+  {
+    "id": 8,
+     "curriculum": [
+        {
+          "title": "1. Introduction to Cybersecurity",
+          "totalTime": "1h 30m",
+          "lectures": [
+            { "title": "The Threat Landscape in 2024", "duration": "30:00" },
+            {
+              "title": "CIA Triad: Confidentiality, Integrity, Availability",
+              "duration": "30:00"
+            },
+            {
+              "title": "Security vs. Convenience Trade-off",
+              "duration": "30:00"
+            }
+          ]
+        },
+        {
+          "title": "2. Networking Foundations for Security",
+          "totalTime": "3h",
+          "lectures": [
+            {
+              "title": "OSI Model and TCP/IP Deep Dive",
+              "duration": "1:00:00"
+            },
+            { "title": "Common Ports and Protocols", "duration": "45:00" },
+            {
+              "title": "IP Addressing and Subnetting Basics",
+              "duration": "45:00"
+            },
+            { "title": "Analyzing Traffic with Wireshark", "duration": "30:00" }
+          ]
+        },
+        {
+          "title": "3. Penetration Testing Methodology",
+          "totalTime": "4h",
+          "lectures": [
+            { "title": "The 5 Phases of Hacking", "duration": "45:00" },
+            {
+              "title": "Reconnaissance and OSINT Techniques",
+              "duration": "1:00:00"
+            },
+            {
+              "title": "Scanning and Enumeration with Nmap",
+              "duration": "1:15:00"
+            },
+            { "title": "Vulnerability Assessment Tools", "duration": "1:00:00" }
+          ]
+        },
+        {
+          "title": "4. Web Application Security",
+          "totalTime": "3h 30m",
+          "lectures": [
+            { "title": "OWASP Top 10 Overview", "duration": "45:00" },
+            {
+              "title": "Exploiting SQL Injection Vulnerabilities",
+              "duration": "1:00:00"
+            },
+            {
+              "title": "Cross-Site Scripting (XSS) Attacks",
+              "duration": "45:00"
+            },
+            {
+              "title": "Broken Authentication and Session Management",
+              "duration": "1:00:00"
+            }
+          ]
+        },
+        {
+          "title": "5. System and Network Security",
+          "totalTime": "3h",
+          "lectures": [
+            { "title": "Firewalls, IDS, and IPS Setup", "duration": "1:00:00" },
+            {
+              "title": "Securing Linux and Windows Servers",
+              "duration": "1:00:00"
+            },
+            {
+              "title": "Wireless Network Attacks (WPA2/WPA3)",
+              "duration": "1:00:00"
+            }
+          ]
+        },
+        {
+          "title": "6. Cryptography and Identity",
+          "totalTime": "2h",
+          "lectures": [
+            {
+              "title": "Symmetric vs. Asymmetric Encryption",
+              "duration": "45:00"
+            },
+            {
+              "title": "Hashing Algorithms and Digital Signatures",
+              "duration": "45:00"
+            },
+            {
+              "title": "Multi-Factor Authentication (MFA) Strategies",
+              "duration": "30:00"
+            }
+          ]
+        },
+        {
+          "title": "7. Final Lab: Practical Hack & Patch",
+          "totalTime": "1h",
+          "lectures": [
+            {
+              "title": "Capture The Flag (CTF) Challenge",
+              "duration": "45:00"
+            },
+            {
+              "title": "Incident Response and Remediation",
+              "duration": "15:00"
+            }
+          ]
+        }
+      ]
+  }
+]

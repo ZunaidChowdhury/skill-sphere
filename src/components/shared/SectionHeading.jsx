@@ -6,8 +6,10 @@ const SectionHeading = ({ title, subTitle, actionBtnTitle, actionBtnUrl }) => {
     return (
         < div className='flex items-center justify-between' >
             <div>
-                <p className='uppercase font-semibold text-blue-600 text-sm'>{subTitle}</p>
-                <h3 className='text-2xl font-semibold'>{title}</h3>
+                {
+                    subTitle && <p className='uppercase font-semibold text-blue-600 text-sm'>{subTitle}</p>
+                }              
+                <h3 className='text-4xl font-semibold'>{title}</h3>
             </div>
             {
                 actionBtnTitle && <Link href={actionBtnUrl} className="rounded-lg flex items-center gap-2 mr-4 text-blue-600 tablet: hover:text-blue-700 transition-colors duration-300 text-base font-semibold">
