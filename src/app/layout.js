@@ -1,5 +1,5 @@
-import dns from "node:dns/promises";
-dns.setServers(["8.8.8.8", "1.1.1.1"]);
+
+
 
 
 import { Geist, Geist_Mono } from "next/font/google";
