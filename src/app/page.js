@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      {/* <FeaturedCourses /> */}
+      <FeaturedCourses />
       <LearningTips />
       <TopInstructors />
       <WhyChooseUs />
