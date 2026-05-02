@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import { authClient } from '@/lib/auth-client';
 
 const LogInPage = () => {
+    console.log('Rendered LogIn page.');
   const router = useRouter();
   const [isHiddenPass, setIsHiddenPass] = useState(true);
 
@@ -15,12 +16,12 @@ const LogInPage = () => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const { email, password } = Object.fromEntries(formData);
-
+    console.log('handleLogin 1');
     const { data, error } = await authClient.signIn.email({
       email,
       password,
     });
-
+    console.log('LogIn data: ', data, 'LogIn error: ', error);
     if (data) {
       router.push('/');
     }

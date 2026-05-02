@@ -1,13 +1,15 @@
 "use client";
 
-import { authClient } from '@/lib/auth-client';
 import Link from 'next/link';
 import React, { useState } from 'react'
 import { FaEye, FaEyeSlash, FaGithub } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
+
+import { authClient } from '@/lib/auth-client';
 import { useRouter } from "next/navigation";
 
 const RegisterPage = () => {
+  console.log('Rendered Register page.');
   const router = useRouter();
   const [isHiddenPass, setIsHiddenPass] = useState(true);
 
@@ -15,14 +17,14 @@ const RegisterPage = () => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const { name, email, photoUrl, password } = Object.fromEntries(formData);
-
+    console.log('handleRegister 1');
     const { data, error } = await authClient.signUp.email({
       name,
       email,
       password,
       image: photoUrl,
     });
-
+    console.log('Register data: ', data, 'Register error: ', error);
     if (data) {
       router.push('/');
     }
