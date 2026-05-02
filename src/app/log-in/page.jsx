@@ -5,10 +5,9 @@ import React, { useState } from 'react'
 import { FaEye, FaEyeSlash, FaGithub } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import { useRouter } from "next/navigation";
-import { authClient } from '@/lib/auth-client';
+import { authClient, gitHubSignIn, googleSignIn } from '@/lib/auth-client';
 
 const LogInPage = () => {
-    console.log('Rendered LogIn page.');
   const router = useRouter();
   const [isHiddenPass, setIsHiddenPass] = useState(true);
 
@@ -16,12 +15,11 @@ const LogInPage = () => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const { email, password } = Object.fromEntries(formData);
-    console.log('handleLogin 1');
     const { data, error } = await authClient.signIn.email({
       email,
       password,
     });
-    console.log('LogIn data: ', data, 'LogIn error: ', error);
+
     if (data) {
       router.push('/');
     }
@@ -34,13 +32,13 @@ const LogInPage = () => {
 
         {/* Social Buttons */}
         <div className="flex flex-col gap-3 mb-6">
-          <button className="btn btn-outline border-zinc-200 hover:bg-zinc-100 w-full normal-case">
+          <button onClick={() => googleSignIn()} className="btn btn-outline border-zinc-200 hover:bg-zinc-100 w-full normal-case">
             {/* <img src="/google-icon.svg" alt="Google" className="w-5 h-5 mr-2" /> */}
             <FcGoogle size={24} />
 
             Continue with Google
           </button>
-          <button className="btn btn-outline border-zinc-200 hover:bg-zinc-100 w-full normal-case">
+          <button onClick={() => gitHubSignIn ()} className="btn btn-outline border-zinc-200 hover:bg-zinc-100 w-full normal-case">
             {/* <img src="/github-icon.svg" alt="GitHub" className="w-5 h-5 mr-2" /> */}
             <FaGithub size={24} />
             Continue with GitHub

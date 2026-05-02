@@ -11,11 +11,8 @@ import { authClient } from '@/lib/auth-client'
 const NavBar = () => {
     const router = useRouter();
     const pathname = usePathname()
-    const { data } = authClient.useSession()
+    const { data, isPending } = authClient.useSession()
     const user = data?.user;
-    console.log('data: ', data);
-    console.log('user: ', user);
-
     const handleLogOut = async () => {
         await authClient.signOut({
             fetchOptions: {
@@ -62,36 +59,41 @@ const NavBar = () => {
                 </div>
                 <div className="navbar-end ">
                     {
-                        user ? <div className='flex items-center gap-3'>
-                            <p className='text-text-primary text-lg'>Hi!,
-                                <Link href='/user/profile'>
-                                    <span className='text-text-primary text-lg font-semibold ml-2'>{user?.name}</span>
-                                </Link>
-                            </p>
-                            <div className='group relative inline-block'>
+                        isPending ? <><span className="loading loading-bars loading-md"></span></> : <>
+                            {
+                                user ? <div className='flex items-center gap-3'>
+                                <p className='text-text-primary text-lg'>Hi!,
+                                    <Link href='/user/profile'>
+                                        <span className='text-text-primary text-lg font-semibold ml-2'>{user?.name}</span>
+                                    </Link>
+                                </p>
+                                <div className='group relative inline-block'>
 
-                                <Link href='/user/profile'>
-                                    <img
-                                        src={user?.image}
-                                        alt="Profile"
-                                        className='w-10 h-10 rounded-full  hover:opacity-90 transition-opacity'
-                                    />
-                                </Link>
+                                    <Link href='/user/profile'>
+                                        <img
+                                            src={user?.image}
+                                            alt="Profile"
+                                            className='w-10 h-10 rounded-full  hover:opacity-90 transition-opacity'
+                                        />
+                                    </Link>
 
-                                <div className='hidden group-hover:block absolute top-full right-0 z-50'>
-                                    <div onClick={handleLogOut} className='bg-white shadow-xl border border-zinc-200 rounded-lg py-3 px-6 whitespace-nowrap text-base font-medium text-gray-700 hover:bg-gray-50 cursor-pointer'>
-                                        Log out
+                                    <div className='hidden group-hover:block absolute top-full right-0 z-50'>
+                                        <div onClick={handleLogOut} className='bg-white shadow-xl border border-zinc-200 rounded-lg py-3 px-6 whitespace-nowrap text-base font-medium text-gray-700 hover:bg-gray-50 cursor-pointer'>
+                                            Log out
+                                        </div>
                                     </div>
+
                                 </div>
 
-                            </div>
-
-                        </div> : <>
-                            <Link href='/log-in' className="rounded-lg flex items-center gap-2 mr-4 btn tablet: hover:text-blue-700 transition-colors duration-300 text-base font-semibold text-text-primary">
-                                <LogIn />Log in</Link>
-                            <Link href='/register' className="rounded-lg hidden tablet:flex items-center gap-2 mr-4 btn text-base font-semibold bg-blue-600 hover:bg-blue-700 text-foreground">
-                                <UserPlus />Register</Link>
+                            </div> : <>
+                                <Link href='/log-in' className="rounded-lg flex items-center gap-2 mr-4 btn tablet: hover:text-blue-700 transition-colors duration-300 text-base font-semibold text-text-primary">
+                                    <LogIn />Log in</Link>
+                                <Link href='/register' className="rounded-lg hidden tablet:flex items-center gap-2 mr-4 btn text-base font-semibold bg-blue-600 hover:bg-blue-700 text-foreground">
+                                    <UserPlus />Register</Link>
+                            </>
+                            }
                         </>
+
                     }
                 </div>
             </div>

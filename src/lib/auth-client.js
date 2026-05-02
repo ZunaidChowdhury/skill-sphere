@@ -3,3 +3,16 @@ export const authClient = createAuthClient({
     /** The base URL of the server (optional if you're using the same domain) */
     baseURL: process.env.NEXT_PUBLIC_BASE_URL,
 })
+
+
+export const googleSignIn = async () => {
+    await authClient.signIn.social({
+        provider: "google",
+    });
+};
+
+export const gitHubSignIn = async () => {
+    await authClient.signIn.social({
+        provider: "github"
+    })
+}
