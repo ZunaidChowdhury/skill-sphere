@@ -220,9 +220,9 @@ const CourseDetailsPage = async ({ params }) => {
 
 export default CourseDetailsPage
 
-export async function generateStaticParams() {
-    const courses = await getCourses();
-    return courses.map(course => ({
-        id: course.id.toString(),
-    }));
-}
+// export async function generateStaticParams() {
+//     const courses = await getCourses();
+//     return courses.map(course => ({
+//         id: course.id.toString(),
+//     }));
+// }
