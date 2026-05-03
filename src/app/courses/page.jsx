@@ -1,11 +1,11 @@
 
+
 import { getCourses, wait } from '@/lib/utils'
 import SectionHeading from '@/components/shared/SectionHeading'
-import ErrorMessage from '@/components/ErrorMessage'
-import CourseCard from '@/components/cards/CourseCard'
+
+import AllCourses from '@/components/sections/AllCourses'
 
 const CoursesPage = async () => {
-    await wait(100);
     let courses = null;
     let error = null;
 
@@ -22,14 +22,11 @@ const CoursesPage = async () => {
             <div className='max-w-350 mx-auto'>
                 <SectionHeading
                     title='All Courses' />
-                {/* content  */}
+
                 {
-                    error ? <ErrorMessage /> : <div className=' grid grid-cols-3 gap-8 pt-10'>
-                            {/* card */}
-                            {
-                                courses.map(course => <CourseCard key={course.id} course={course} />)
-                            }
-                        </div>
+                    error ? <ErrorMessage /> : <>
+                        <AllCourses courses={courses} />
+                    </>
                 }
 
             </div>
