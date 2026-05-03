@@ -1,5 +1,5 @@
 
-import { getCourses } from '@/lib/utils'
+import { getCourses, wait } from '@/lib/utils'
 import SectionHeading from '@/components/shared/SectionHeading'
 import ErrorMessage from '@/components/ErrorMessage'
 import CourseCard from '@/components/cards/CourseCard'
