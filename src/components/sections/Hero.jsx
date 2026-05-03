@@ -20,34 +20,34 @@ const Hero = () => {
                     </h1>
                     <p className='text-text-secondary text-xl'>Master the skills that matter. From coding to creative design,
                         join 10,000+ students building their future today.</p>
-                    <Link href='/courses' className="rounded-lg btn text-base font-semibold bg-blue-600 hover:bg-blue-700 text-foreground">
+                    <Link href='/courses' className="rounded-lg btn px-8 h-12 text-base font-semibold bg-blue-600 hover:bg-blue-700 text-foreground">
                         Explore Courses<ArrowRight /></Link>
 
                     <div className='flex items-center gap-8 mt-6'>
                         {/* e1 */}
                         <div className='flex items-center gap-3'>
-                            <User size={36} className='text-blue-600' />
+                            <User size={45} className='text-blue-600' />
                             <div>
-                                <h4 className='text-xl font-semibold'>10K+</h4>
-                                <p className='text-text-secondary'>Students</p>
+                                <h4 className='text-2xl font-semibold'>10K+</h4>
+                                <p className='text-text-secondary text-xl'>Students</p>
                             </div>
                         </div>
 
                         {/* e2 */}
                         <div className='flex items-center gap-3'>
-                            <PackageOpen size={36} className='text-blue-600' />
+                            <PackageOpen size={45} className='text-blue-600' />
                             <div>
-                                <h4 className='text-xl font-semibold'>200K+</h4>
-                                <p className='text-text-secondary'>Courses</p>
+                                <h4 className='text-2xl font-semibold'>200K+</h4>
+                                <p className='text-text-secondary text-xl'>Courses</p>
                             </div>
                         </div>
 
 
                         <div className='flex items-center gap-3'>
-                            <Star size={36} className='text-blue-600' />
+                            <Star size={45} className='text-blue-600' />
                             <div>
-                                <h4 className='text-xl font-semibold flex items-center gap-1'>4.8<FaStar className='mb-1'/></h4>
-                                <p className='text-text-secondary'>Average Rating</p>
+                                <h4 className='text-2xl font-semibold flex items-center gap-1'>4.8<FaStar className='mb-1'/></h4>
+                                <p className='text-text-secondary text-xl'>Average Rating</p>
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@ const Hero = () => {
                         </div>
                     </div>
 
-                    <div className='absolute top-16 left-16 flex items-center gap-3 bg-foreground py-2 px-3 rounded-xl'>
+                    <div className='absolute top-14 left-25 flex items-center gap-3 bg-foreground py-2 px-3 rounded-xl'>
                         <div className='bg-purple-800 p-2 rounded-lg'>
                             <SiCardmarket  size={24} className='text-white' />
                         </div>

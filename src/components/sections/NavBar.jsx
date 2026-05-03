@@ -38,8 +38,12 @@ const NavBar = () => {
                             <li className={`${pathname === '/' ? 'border-l-4 border-blue-600' : ''}`}><Link href='/' className={`p-2 text-base font-semibold hover:bg-transparent hover:text-blue-600 transition-colors duration-300 ${pathname === '/' ? 'text-blue-600' : ''}`}>Home</Link></li>
                             <li className={`${pathname === '/courses' ? 'border-l-4 border-blue-600' : ''}`}><Link href='/courses' className={`p-2 text-base font-semibold hover:bg-transparent hover:text-blue-600 transition-colors duration-300 ${pathname === '/courses' ? 'text-blue-600' : ''}`}>Courses</Link></li>
                             <li className={`${pathname === '/user/profile' ? 'border-l-4 border-blue-600' : ''}`}><Link href='user/profile' className={`p-2 text-base font-semibold hover:bg-transparent hover:text-blue-600 transition-colors duration-300 ${pathname === '/user/profile' ? 'text-blue-600' : ''}`}>My Profile</Link></li>
-                            <li><Link href='/register' className="rounded-lg tablet:hidden w-full flex items-center gap-2 mr-4 btn text-base font-semibold bg-blue-600 hover:bg-blue-700 text-foreground">
-                                <UserPlus />Register</Link></li>
+                            {
+                                user ? <button onClick={handleLogOut} className="mt-4 inline-flex md:hidden rounded-lg btn  text-base font-semibold text-text-primary">
+                                    <LogOut />Log out</button> :
+                                    <li><Link href='/log-in' className="mt-4 rounded-lg xs:hidden w-full flex items-center gap-2 mr-4 btn text-base font-semibold bg-blue-600 hover:bg-blue-700 text-foreground">
+                                        <LogIn />Log in</Link></li>
+                            }
 
                         </ul>
                     </div>
@@ -64,7 +68,7 @@ const NavBar = () => {
                         isPending ? <><span className="loading loading-bars loading-md"></span></> : <>
                             {
                                 user ? <div className='flex items-center gap-3'>
-                                    <p className='text-text-primary text-lg'>Hi!,
+                                    <p className='hidden tablet:inline-flex text-text-primary text-lg'>Hi!,
                                         <Link href='/user/profile'>
                                             <span className='text-text-primary text-lg font-semibold ml-2'>{user?.name}</span>
                                         </Link>
@@ -87,13 +91,13 @@ const NavBar = () => {
                                             // </div>
                                         }
                                     </div>
-                                    <button onClick={handleLogOut} className="rounded-lg btn  text-base font-semibold text-text-primary">
+                                    <button onClick={handleLogOut} className="hidden md:inline-flex rounded-lg btn  text-base font-semibold text-text-primary">
                                         <LogOut />Log out</button>
 
                                 </div> : <>
-                                    <Link href='/log-in' className="rounded-lg  mr-4 btn text-base font-semibold text-text-primary">
+                                    <Link href='/log-in' className="hidden xs:flex items-center gap-2 rounded-lg  mr-4 btn text-base font-semibold text-text-primary">
                                         <LogIn />Log in</Link>
-                                    <Link href='/register' className="rounded-lg hidden tablet:flex items-center gap-2 mr-4 btn text-base font-semibold bg-blue-600 hover:bg-blue-700 text-foreground">
+                                    <Link href='/register' className="rounded-lg hidden sm:flex items-center gap-2 mr-4 btn text-base font-semibold bg-blue-600 hover:bg-blue-700 text-foreground">
                                         <UserPlus />Register</Link>
                                 </>
                             }
