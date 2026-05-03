@@ -6,6 +6,7 @@ import { FaEye, FaEyeSlash, FaGithub } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import { useRouter } from "next/navigation";
 import { authClient, gitHubSignIn, googleSignIn } from '@/lib/auth-client';
+import { toast } from 'react-toastify';
 
 const LogInPage = () => {
   const router = useRouter();
@@ -22,6 +23,7 @@ const LogInPage = () => {
     });
 
     if (data) {
+      toast.success("Login successful!", {autoClose: 3000,});
       router.push('/');
     }
     if (error) {
@@ -86,7 +88,7 @@ const LogInPage = () => {
           </div>
 
           <button type="submit" className="btn bg-blue-600 text-white hover:bg-blue-700 w-full mt-2">
-            Continue
+            Log in
           </button>
           {
             error && <p className='text-red-500 font-medium text-center'>

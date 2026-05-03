@@ -6,6 +6,11 @@ const client = new MongoClient(process.env.MONGODB_URI);
 const db = client.db('SkillSphere');
 
 export const auth = betterAuth({
+    user: {
+        changeEmail: {
+            enabled: true,
+        }
+    },
     emailAndPassword: {
         enabled: true,
     },

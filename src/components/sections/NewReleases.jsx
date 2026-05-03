@@ -1,28 +1,26 @@
-import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import SectionHeading from '../shared/SectionHeading'
 import Image from 'next/image'
 import { FaStar } from 'react-icons/fa'
 
-const FeaturedCourses = async ({courses}) => {
-    const coursesData = courses;
-    coursesData.sort((a, b) => b.rating - a.rating);
-    // console.log('courses', courses);
-
+const NewReleases = ({ courses }) => {
+    const newReleases = courses;
+    newReleases.sort((a, b) =>
+        new Date(b.releaseDate) - new Date(a.releaseDate)
+    );
     return (
         <div className='pt-20'>
             {/* container */}
             <div className='max-w-350 mx-auto'>
                 <SectionHeading
-                    title='Top Rated Courses'
-                    subTitle='Popular Courses'
+                    title='New Releases'
                     actionBtnTitle='View All Courses'
                     actionBtnUrl='/courses' />
                 {/* content  */}
                 <div className=' grid grid-cols-3 gap-8 pt-4'>
                     {/* card */}
                     {
-                        coursesData.slice(0, 3).map(course => <div key={course.id} className=' group bg-foreground rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300'>
+                        newReleases.slice(0, 3).map(course => <div key={course.id} className=' group bg-foreground rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300'>
                             <Link href={`/courses/${course.id}`} >
                                 <Image
                                     src={course.image}
@@ -69,4 +67,4 @@ const FeaturedCourses = async ({courses}) => {
     )
 }
 
-export default FeaturedCourses
+export default NewReleases

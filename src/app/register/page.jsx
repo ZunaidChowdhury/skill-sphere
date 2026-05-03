@@ -7,6 +7,7 @@ import { FcGoogle } from 'react-icons/fc';
 
 import { authClient, gitHubSignIn, googleSignIn } from '@/lib/auth-client';
 import { useRouter } from "next/navigation";
+import { toast } from 'react-toastify';
 
 const RegisterPage = () => {
   const router = useRouter();
@@ -26,6 +27,7 @@ const RegisterPage = () => {
     });
 
     if (data) {
+      toast.success("Registration successful! Log in to continue.");
       setError(null);
       await authClient.signOut();
       router.push('/log-in');
@@ -65,6 +67,7 @@ const RegisterPage = () => {
 
         {/* Registration Form using Server Action */}
         <form onSubmit={handleRegister} className="space-y-4">
+          {/* name */}
           <div className="form-control">
             <label className="label">
               <span className="label-text font-semibold">Name</span>
@@ -77,6 +80,7 @@ const RegisterPage = () => {
             />
           </div>
 
+          {/* image url */}
           <div className="form-control">
             <label className="label">
               <span className="label-text font-semibold">Photo URL</span>
@@ -89,6 +93,7 @@ const RegisterPage = () => {
             />
           </div>
 
+          {/* email */}
           <div className="form-control">
             <label className="label">
               <span className="label-text font-semibold">Email address</span>
@@ -101,6 +106,7 @@ const RegisterPage = () => {
             />
           </div>
 
+          {/* pass */}
           <div className="form-control">
             <label className="label">
               <span className="label-text font-semibold">Password</span>
@@ -118,9 +124,11 @@ const RegisterPage = () => {
             </div>
           </div>
 
+          {/* submit */}
           <button type="submit" className="btn bg-blue-600 text-white hover:bg-blue-700 w-full mt-2">
-            Continue
+            Register
           </button>
+
           {
             error && <p className='text-red-500 font-medium text-center'>
               {error?.message}

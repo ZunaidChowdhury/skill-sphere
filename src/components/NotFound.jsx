@@ -10,7 +10,7 @@ const NotFound = () => {
     return (
         <div className=" bg-gray-200 text-text-primary py-20">
             {/* container */}
-            <div className="w-full max-w-277.5 mx-auto p-20 text-center bg-foreground rounded-lg shadow-sm border border-gray-100">
+            <div className="w-full max-w-350 mx-auto p-20 text-center bg-foreground rounded-lg shadow-sm border border-gray-100">
 
                 <h2 className="text-9xl font-semibold text-text-primary mb-10">404</h2>
 
